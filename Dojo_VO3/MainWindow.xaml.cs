@@ -40,5 +40,44 @@ namespace Dojo_VO3
             dtgrDataGrid.ItemsSource = Shapes;
 
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            var temp = dtgrDataGrid.SelectedItem as GeoObject;
+            Shape geoObject = null;
+
+            switch (temp.Shape)
+            {
+                case "Rechteck":
+                    geoObject = new Rectangle()
+                    { 
+                        Height = temp.Height,
+                        Width = temp.Width,
+                        Stroke = new SolidColorBrush(Colors.Red),
+                        StrokeThickness = 1
+                    };
+
+                    break;
+                case "Kreis":
+                    geoObject = new Ellipse()
+                    {
+                        Height = temp.Height,
+                        Width = temp.Width,
+                        Stroke = new SolidColorBrush(Colors.Red),
+                        StrokeThickness = 1
+                    };
+                    break;
+                default:
+                    break;
+            }
+            canDrawingArea.Children.Add(geoObject);
+            geoObject.SetValue(Canvas.TopProperty, (double)temp.PosY);
+            geoObject.SetValue(Canvas.LeftProperty, (double)temp.PosX);
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
