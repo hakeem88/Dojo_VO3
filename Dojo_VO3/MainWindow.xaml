@@ -33,28 +33,28 @@
             </Grid.RowDefinitions>
 
             <Label Grid.Row="0" Grid.Column="0" Content="Form" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
-            <ComboBox Grid.Row="0" Grid.Column="1" Margin="7">
+            <ComboBox x:Name="cboForm" Grid.Row="0" Grid.Column="1" Margin="7">
                 <ComboBoxItem Content="Kreis"></ComboBoxItem>
                 <ComboBoxItem Content="Quadrat"></ComboBoxItem>
             </ComboBox>
             <Label Grid.Row="1" Grid.Column="0" Content="Pos X" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
-            <TextBox Grid.Row="1" Grid.Column="1" Margin="7" ></TextBox>
+            <TextBox x:Name="tboPosX" Grid.Row="1" Grid.Column="1" Margin="7" ></TextBox>
 
             <Label Grid.Row="2" Grid.Column="0" Content="Pos Y" HorizontalAlignment="Center" VerticalAlignment="Center"> </Label>
-            <TextBox Grid.Row="2" Grid.Column="1" Margin="7" ></TextBox>
+            <TextBox x:Name="tboPosY" Grid.Row="2" Grid.Column="1" Margin="7" ></TextBox>
 
             <Label Grid.Row="3" Grid.Column="0" Content="Breite" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
-            <TextBox Grid.Row="3" Grid.Column="1" Margin="7"></TextBox>
+            <TextBox x:Name="tboBreite" Grid.Row="3" Grid.Column="1" Margin="7"></TextBox>
 
             <Label Grid.Row="4" Grid.Column="0" Content="Länge" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
-            <TextBox Grid.Row="4" Grid.Column="1" Margin="7"></TextBox>
+            <TextBox x:Name="tboLaenge" Grid.Row="4" Grid.Column="1" Margin="7"></TextBox>
 
             <Button Grid.Row="5" Grid.Column="1" Content="Neu" Margin="10" />
 
 
         </Grid>
 
-        <DataGrid Grid.Row="0" Grid.Column="1" Margin="5"></DataGrid>
+        <DataGrid x:Name="dtgrDataGrid" Grid.Row="0" Grid.Column="1" Margin="5"></DataGrid>
 
         <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Right">
             <Button Grid.Row="1" Grid.Column="1" Content="Löschen" Margin="7"></Button>
@@ -64,7 +64,7 @@
 
         <Grid Grid.Row="2" Grid.Column="1">
             <Border BorderThickness="2" BorderBrush="Black" Margin="10" CornerRadius="10">
-            <Canvas Margin="10">
+            <Canvas x:Name="canDrawingArea" Margin="10">
                 
             </Canvas>
             </Border>
