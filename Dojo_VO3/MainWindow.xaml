@@ -37,7 +37,7 @@
             </Grid.RowDefinitions>
 
             <Label Grid.Row="0" Grid.Column="0" Content="Form" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <ComboBox ItemsSource="{Binding Shapes}" x:Name="cboForm" Grid.Row="0" Grid.Column="1" Margin="7"/>
+            <ComboBox ItemsSource="{Binding Shapes}" x:Name="cboForm" Grid.Row="0" Grid.Column="1" Margin="7"  SelectedItem="{Binding SelectedShape}"/>
             <Label Grid.Row="1" Grid.Column="0" Content="Pos X" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <TextBox x:Name="tboPosX" Grid.Row="1" Grid.Column="1" Margin="7" />
 

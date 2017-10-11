@@ -9,6 +9,7 @@ namespace Dojo_VO3.ViewModels
     class MainViewModel
     {
         public List<String> Shapes { get; set; } //property!!
+        public string SelectedShape { get; set; }
 
         public MainViewModel()
         {
