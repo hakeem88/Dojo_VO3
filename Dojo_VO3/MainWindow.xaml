@@ -33,10 +33,7 @@
             </Grid.RowDefinitions>
 
             <Label Grid.Row="0" Grid.Column="0" Content="Form" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
-            <ComboBox x:Name="cboForm" Grid.Row="0" Grid.Column="1" Margin="7">
-                <ComboBoxItem Content="Kreis"></ComboBoxItem>
-                <ComboBoxItem Content="Quadrat"></ComboBoxItem>
-            </ComboBox>
+            <ComboBox x:Name="cboForm" Grid.Row="0" Grid.Column="1" Margin="7"> </ComboBox>
             <Label Grid.Row="1" Grid.Column="0" Content="Pos X" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
             <TextBox x:Name="tboPosX" Grid.Row="1" Grid.Column="1" Margin="7" ></TextBox>
 
@@ -44,12 +41,12 @@
             <TextBox x:Name="tboPosY" Grid.Row="2" Grid.Column="1" Margin="7" ></TextBox>
 
             <Label Grid.Row="3" Grid.Column="0" Content="Breite" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
-            <TextBox x:Name="tboBreite" Grid.Row="3" Grid.Column="1" Margin="7"></TextBox>
+            <TextBox x:Name="tboWidth" Grid.Row="3" Grid.Column="1" Margin="7"></TextBox>
 
             <Label Grid.Row="4" Grid.Column="0" Content="Länge" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
-            <TextBox x:Name="tboLaenge" Grid.Row="4" Grid.Column="1" Margin="7"></TextBox>
+            <TextBox x:Name="tboHeight" Grid.Row="4" Grid.Column="1" Margin="7"></TextBox>
 
-            <Button Grid.Row="5" Grid.Column="1" Content="Neu" Margin="10" />
+            <Button Grid.Row="5" Grid.Column="1" Content="Neu" Margin="10" Click="Button_Click" />
 
 
         </Grid>
